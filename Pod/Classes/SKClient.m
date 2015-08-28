@@ -16,7 +16,7 @@
 #import "SimpleIPResultParser.h"
 #import "SimpleJSONIPResultParser.h"
 
-static NSString *const kSKClientVersion = @"1.0";
+static NSString *const kSKClientVersion = @"0.1.0";
 
 
 

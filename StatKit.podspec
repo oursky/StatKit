@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "StatKit"
   s.version          = "0.1.0"
-  s.summary          = "A short description of StatKit."
+  s.summary          = "A lightweight obj-c library that makes collecting statistics easy."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,14 +17,15 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+                       A lightweight obj-c library that makes collecting statistics easy.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/StatKit"
+  s.homepage         = "https://github.com/oursky/StatKit"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Steven-Chan" => "stevenchan@oursky.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/StatKit.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/oursky/StatKit.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/oursky'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
