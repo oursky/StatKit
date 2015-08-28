@@ -6,7 +6,7 @@
 //  Copyright © 2015 oursky. All rights reserved.
 //
 
-#import <StatKit/SKClient.h>
+#import <StatKit/StatKit.h>
 
 @interface DemoStatClient : SKClient
 
