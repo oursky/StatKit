@@ -7,12 +7,17 @@
 //
 
 #import "SKAppDelegate.h"
+#import "DemoStatClient.h"
 
 @implementation SKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [DemoStatClient setActiveClient:[[DemoStatClient alloc] initWithUserDefaults:[NSUserDefaults standardUserDefaults]]];
+    [[DemoStatClient activeClient] startSession];
+    
     return YES;
 }
 
@@ -31,6 +36,7 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    [[DemoStatClient activeClient] startSession];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
