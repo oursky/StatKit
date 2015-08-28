@@ -340,7 +340,13 @@ static SKClient *activeClient = nil;
             [self.pendingSessions removeObject:sessionToUpdate];
             [self.pendingSessions addObject:session.dictionary];
         }
+        else
+        {
+            [self.pendingSessions addObject:session.dictionary];
+        }
         
+        [self.userDefaults setObject:self.pendingSessions forKey:kKeySKClientPendingSessions];
+        [self.userDefaults synchronize];
     });
 }
 
