@@ -12,6 +12,6 @@
 #import "SKClient.h"
 #import "SKData.h"
 #import "SKEvent.h"
-#import "SKTimedEvent"
+#import "SKTimedEvent.h"
 
 #endif /* StatKit_h */
