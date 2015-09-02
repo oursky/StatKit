@@ -33,6 +33,8 @@ static NSUInteger const kPendingEventCapacity = 5;
         NSURLSession *session = [NSURLSession sharedSession];
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:kStatAPI]];
         [request setHTTPMethod:@"POST"];
+        [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+        [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
         [request setHTTPBody:data];
         
         [[session dataTaskWithRequest:request
